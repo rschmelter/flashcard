@@ -1,6 +1,6 @@
 class User < ApplicationRecord
     has_many :decks
 
-    validates :name, uniqueness: true
+    validates :username, uniqueness: true
 
 end
