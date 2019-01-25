@@ -10,7 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_01_25_193534) do
+ActiveRecord::Schema.define(version: 2019_01_25_194032) do
+
+  create_table "decks", force: :cascade do |t|
+    t.string "name"
+    t.integer "cards"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
